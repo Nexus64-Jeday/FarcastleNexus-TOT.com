@@ -1,143 +1,183 @@
-  {/* Hero Section */}
-  <header className="relative pt-32 pb-20 overflow-hidden">
-    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent -z-10"></div>
-    <div className="max-w-7xl mx-auto px-6 text-center">
-      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs font-bold uppercase tracking-widest mb-6">
-        <Shield size={14} /> Industry 5.0 Standard
-      </div>
-      <h1 className="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight leading-tight">
-        Operational Sovereignty through <br />
-        <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400">The TOT Doctrine</span>
-      </h1>
-      <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-12 leading-relaxed">
-        Eliminating uncertainty in critical infrastructures. FARCASTLE NEXUS merges Evolutionary AI with Total Operational Traceability to shield your capital and your executive liability.
-      </p>
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <button className="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-500 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-2 shadow-xl shadow-blue-600/20">
-          Download White Paper <ChevronRight size={20} />
-        </button>
-        <button className="w-full sm:w-auto px-8 py-4 bg-slate-800 hover:bg-slate-700 rounded-xl font-bold text-lg transition-all border border-slate-700">
-          Request Integrity Audit
-        </button>
-      </div>
-    </div>
-  </header>
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FARCASTLE NEXUS | The TOT Standard</title>
+    <!-- Framework de diseño: Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Iconos de grado industrial: FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); }
+        .gradient-text { background: linear-gradient(135deg, #60a5fa 0%, #34d399 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-glow { background: radial-gradient(circle at center, rgba(37, 99, 235, 0.15) 0%, transparent 70%); }
+        .card-border { border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(30, 41, 59, 0.4); }
+        .dashboard-card { background: linear-gradient(145deg, #0f172a, #1e293b); border: 1px solid #334155; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 selection:bg-blue-500/30">
 
-  {/* The Governance Shield (NIS2/CER) */}
-  <section id="governance" className="py-24 bg-slate-900/50 border-y border-slate-800">
-    <div className="max-w-7xl mx-auto px-6">
-      <div className="grid lg:grid-cols-2 gap-16 items-center">
-        <div>
-          <h2 className="text-3xl font-bold mb-6">The Perfect Storm: <br /><span className="text-blue-500">Legal & Operational Survival</span></h2>
-          <p className="text-slate-400 mb-8 leading-relaxed">
-            New regulations like **NIS2** and **CER** have transformed maintenance into a matter of personal executive liability. Fines up to 2% of global turnover and personal suspensions are the new reality.
-          </p>
-          <div className="space-y-4">
-            <div className="flex gap-4 p-4 rounded-xl bg-slate-800/50 border border-slate-700">
-              <div className="text-blue-500 shrink-0"><Scale size={24} /></div>
-              <div>
-                <h4 className="font-bold">Nominal Liability Protection</h4>
-                <p className="text-sm text-slate-400">Our standard provides the forensic evidence needed to prove due diligence and shield board members from personal sanctions.</p>
-              </div>
+    <!-- Navegación Superior -->
+    <nav class="fixed top-0 w-full z-50 border-b border-slate-800/50 glass">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-emerald-500 rounded-lg flex items-center justify-center font-bold text-xl shadow-lg shadow-blue-500/20 text-white">F</div>
+                <span class="text-xl font-extrabold tracking-tighter uppercase">FARCASTLE <span class="text-blue-500">NEXUS</span></span>
             </div>
-            <div className="flex gap-4 p-4 rounded-xl bg-slate-800/50 border border-slate-700">
-              <div className="text-emerald-500 shrink-0"><Lock size={24} /></div>
-              <div>
-                <h4 className="font-bold">IT/OT Convergence Shield</h4>
-                <p className="text-sm text-slate-400">Isolation of critical process data through our UPU v1.0 edge hardware, preventing cyberattacks from affecting physical production.</p>
-              </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-bold text-slate-400 uppercase tracking-widest">
+                <a href="#governance" class="hover:text-white transition-colors">Gobernanza</a>
+                <a href="#ai" class="hover:text-white transition-colors">IA Evolutiva</a>
+                <button class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-2.5 rounded-full shadow-lg shadow-blue-600/20 transition-all active:scale-95 font-bold uppercase">White Paper</button>
             </div>
-          </div>
         </div>
-        <div className="relative p-8 rounded-3xl bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 shadow-2xl">
-          <div className="absolute -top-6 -right-6 w-24 h-24 bg-blue-600/20 blur-3xl rounded-full"></div>
-          <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
-            <Shield className="text-blue-500" /> Executive Compliance Dashboard
-          </h3>
-          <div className="space-y-6">
-            <div className="h-2 bg-slate-700 rounded-full overflow-hidden">
-              <div className="h-full bg-blue-500 w-[85%]"></div>
+    </nav>
+
+    <!-- Sección Hero (Soberanía Operacional) -->
+    <header class="relative pt-48 pb-32 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full hero-glow -z-10"></div>
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs font-bold uppercase tracking-widest mb-8">
+                <i class="fas fa-shield-halved"></i> Industry 5.0 Standard
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="p-4 rounded-lg bg-slate-950/50 text-center">
-                <div className="text-xs text-slate-500 uppercase">NIS2 Readiness</div>
-                <div className="text-2xl font-bold text-blue-400">94%</div>
-              </div>
-              <div className="p-4 rounded-lg bg-slate-950/50 text-center">
-                <div className="text-xs text-slate-500 uppercase">CER Compliance</div>
-                <div className="text-2xl font-bold text-emerald-400">Certified</div>
-              </div>
+            <h1 class="text-5xl md:text-7xl font-black mb-8 tracking-tighter leading-tight uppercase">
+                Soberanía Operacional mediante <br>
+                <span class="gradient-text italic font-black text-6xl md:text-8xl">La Doctrina TOT</span>
+            </h1>
+            <p class="text-xl text-slate-400 max-w-3xl mx-auto mb-12 leading-relaxed font-light">
+                Eliminando la incertidumbre en infraestructuras críticas. <span class="text-white font-semibold">FARCASTLE NEXUS</span> fusiona la IA Evolutiva con la Trazabilidad Operacional Total (TOT) para blindar el capital industrial y la responsabilidad ejecutiva nominal.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
+                <button class="w-full sm:w-auto px-10 py-5 bg-blue-600 hover:bg-blue-500 rounded-2xl font-extrabold text-lg transition-all shadow-2xl shadow-blue-600/40 flex items-center justify-center gap-3 group">
+                    Descargar White Paper <i class="fas fa-chevron-right group-hover:translate-x-1 transition-transform"></i>
+                </button>
+                <button class="w-full sm:w-auto px-10 py-5 bg-slate-900 hover:bg-slate-800 rounded-2xl font-extrabold text-lg transition-all border border-slate-700">
+                    Solicitar Auditoría de Integridad
+                </button>
             </div>
-            <div className="p-4 rounded-lg bg-blue-500/10 border border-blue-500/20 text-sm text-blue-300">
-               <strong>Forensic Alert:</strong> Evolutionary AI detected systemic equilibrium shift in Turret Bearing. Proactive maintenance audit generated.
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  {/* AI Comparison Section */}
-  <section id="ai" className="py-24 max-w-7xl mx-auto px-6">
-    <div className="text-center mb-16">
-      <h2 className="text-3xl font-bold mb-4">Evolutionary AI vs. Black Box Models</h2>
-      <p className="text-slate-400 max-w-2xl mx-auto">Why standard Deep Learning fails where Farcastle Nexus thrives: The power of Decision Lineage.</p>
-    </div>
+    <!-- Sección Gobernanza (NIS2/CER) -->
+    <section id="governance" class="py-24 bg-slate-900/40 border-y border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6 text-left">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div>
+                    <h2 class="text-4xl font-black mb-8 tracking-tighter uppercase leading-none text-left">
+                        La Tormenta Perfecta: <br><span class="text-blue-500 italic text-3xl">Supervivencia Legal y Operativa</span>
+                    </h2>
+                    <p class="text-slate-400 mb-8 text-lg leading-relaxed font-light">
+                        Directivas como <strong>NIS2</strong> y <strong>CER</strong> han transformado el mantenimiento en una cuestión de <strong>responsabilidad ejecutiva nominal</strong>. Sanciones de hasta el 2% de facturación global y suspensiones personales son la nueva realidad para el sector energético.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex gap-5 p-6 rounded-2xl card-border group hover:bg-blue-900/10 transition-colors">
+                            <i class="fas fa-scale-balanced text-blue-500 text-2xl"></i>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1 italic">Protección de Responsabilidad Nominal</h4>
+                                <p class="text-sm text-slate-500">Nuestro estándar proporciona la evidencia forense inmutable necesaria para demostrar la debida diligencia ante reguladores y aseguradoras.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5 p-6 rounded-2xl card-border group hover:bg-emerald-900/10 transition-colors">
+                            <i class="fas fa-lock text-emerald-500 text-2xl"></i>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1 italic">Escudo ante Convergencia IT/OT</h4>
+                                <p class="text-sm text-slate-500">Aislamiento de datos críticos mediante hardware de borde UPU v1.0, evitando que brechas de ciberseguridad detengan la producción física.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <div className="grid md:grid-cols-2 gap-8">
-      <div className="p-8 rounded-2xl border border-slate-800 bg-slate-900/30 hover:bg-slate-900/50 transition-all">
-        <h3 className="text-xl font-bold mb-6 text-slate-500">Standard Deep Learning</h3>
-        <ul className="space-y-4">
-          <li className="flex items-start gap-3 text-slate-500">
-            <div className="mt-1">❌</div>
-            <span>"Black Box" opacity: No explanation for decisions.</span>
-          </li>
-          <li className="flex items-start gap-3 text-slate-500">
-            <div className="mt-1">❌</div>
-            <span>Requires massive Big Data history to "learn".</span>
-          </li>
-          <li className="flex items-start gap-3 text-slate-500">
-            <div className="mt-1">❌</div>
-            <span>Static after training: Fails in "Black Swan" events.</span>
-          </li>
-        </ul>
-      </div>
-      <div className="p-8 rounded-2xl border border-blue-500/30 bg-blue-500/5 shadow-inner shadow-blue-500/10 scale-105 z-10">
-        <h3 className="text-xl font-bold mb-6 text-blue-400 flex items-center gap-2">
-          <Cpu /> Evolutionary AI (TOT Standard)
-        </h3>
-        <ul className="space-y-4">
-          <li className="flex items-start gap-3">
-            <div className="mt-1">✅</div>
-            <span><strong>Decision Lineage:</strong> Fully auditable and explainable logic.</span>
-          </li>
-          <li className="flex items-start gap-3">
-            <div className="mt-1">✅</div>
-            <span><strong>Smart Data:</strong> High efficiency with real-time sensor fusion.</span>
-          </li>
-          <li className="flex items-start gap-3">
-            <div className="mt-1">✅</div>
-            <span><strong>Adaptive Mutation:</strong> Evolves with the asset's real fatigue.</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
+                <!-- Dashboard de Cumplimiento -->
+                <div class="p-10 rounded-[3rem] dashboard-card shadow-3xl relative overflow-hidden group">
+                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-blue-600/10 blur-[80px] rounded-full"></div>
+                    <h3 class="text-xl font-extrabold mb-8 flex items-center gap-3 text-slate-100">
+                        <i class="fas fa-gauge-high text-blue-500"></i> Executive Compliance Dashboard
+                    </h3>
+                    <div class="space-y-10">
+                        <div>
+                            <div class="flex justify-between mb-3 text-xs font-bold uppercase tracking-widest text-slate-500">
+                                <span>Preparación NIS2</span>
+                                <span class="text-blue-400">94%</span>
+                            </div>
+                            <div class="h-4 bg-slate-900 rounded-full overflow-hidden border border-slate-800 p-1">
+                                <div class="h-full bg-blue-600 rounded-full w-[94%] shadow-[0_0_15px_rgba(37,99,235,0.5)]"></div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="p-6 rounded-3xl bg-slate-950 border border-slate-800 text-center">
+                                <div class="text-xs font-bold text-slate-500 uppercase mb-2">Estado CER</div>
+                                <div class="text-2xl font-black text-emerald-500 italic">CERTIFICADO</div>
+                            </div>
+                            <div class="p-6 rounded-3xl bg-slate-950 border border-slate-800 text-center">
+                                <div class="text-xs font-bold text-slate-500 uppercase mb-2">Auditoría TOT</div>
+                                <div class="text-2xl font-black text-blue-500 italic">VERIFICADA</div>
+                            </div>
+                        </div>
+                        <div class="p-5 rounded-2xl bg-blue-500/5 border border-blue-500/20 text-blue-300 text-sm italic leading-relaxed text-left">
+                            <i class="fas fa-circle-info mr-2"></i> <strong>Alerta Forense:</strong> IA Evolutiva detectó cambio de equilibrio en Guyana Block Stabroek. Auditoría proactiva generada.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  {/* Footer */}
-  <footer className="py-12 border-t border-slate-800 bg-slate-950">
-    <div className="max-w-7xl mx-auto px-6 text-center">
-      <div className="flex justify-center items-center gap-2 mb-6">
-        <div className="w-8 h-8 bg-slate-800 rounded flex items-center justify-center font-bold text-slate-400">F</div>
-        <span className="font-bold">FARCASTLE NEXUS</span>
-      </div>
-      <p className="text-sm text-slate-500 mb-4 uppercase tracking-widest font-semibold">
-        European Union Registered Trademarks: 19,316,468 | 19,316,483
-      </p>
-      <p className="text-xs text-slate-600 max-w-2xl mx-auto">
-        Classes 9 & 42: AI Software, Decision Support Systems, and Quality Auditing. <br />
-        © 2026 Javier Gastelurrutia - All Rights Reserved. Protected Industrial Property.
-      </p>
-    </div>
-  </footer>
-</div>
+    <!-- Sección IA: Evolutiva vs Black Box -->
+    <section id="ai" class="py-24 max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-black mb-16 tracking-tighter uppercase leading-none">IA Evolutiva <br><span class="text-slate-500 italic text-3xl text-left">vs. Modelos de Caja Negra</span></h2>
+        
+        <div class="grid md:grid-cols-2 gap-8 items-stretch">
+            <div class="p-10 rounded-[2.5rem] border border-slate-800 bg-slate-950/50 flex flex-col opacity-50 grayscale text-left">
+                <h3 class="text-2xl font-bold mb-8 text-slate-400 italic">Deep Learning Estándar</h3>
+                <ul class="space-y-6">
+                    <li class="flex items-start gap-4 text-slate-500">
+                        <i class="fas fa-circle-xmark mt-1 text-red-500"></i>
+                        <span>Opacidad "Black Box": Decisiones sin linaje ni explicación técnica auditable.</span>
+                    </li>
+                    <li class="flex items-start gap-4 text-slate-500">
+                        <i class="fas fa-circle-xmark mt-1 text-red-500"></i>
+                        <span>Requiere históricos masivos (Big Data) para "aprender" fallos de forma reactiva.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="p-10 rounded-[2.5rem] border border-blue-500/30 bg-blue-600/5 shadow-2xl relative overflow-hidden group text-left">
+                <div class="absolute top-0 right-0 p-8 opacity-5"><i class="fas fa-brain text-9xl"></i></div>
+                <h3 class="text-2xl font-bold mb-8 text-blue-400 flex items-center gap-2 uppercase tracking-widest">
+                   <i class="fas fa-microchip text-blue-500"></i> IA Evolutiva (TOT Standard)
+                </h3>
+                <ul class="space-y-6 relative z-10">
+                    <li class="flex items-start gap-4 text-lg font-medium">
+                        <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                        <span><strong>Linaje de Decisión:</strong> Lógica totalmente auditable y transparente para seguros.</span>
+                    </li>
+                    <li class="flex items-start gap-4 text-lg font-medium">
+                        <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                        <span><strong>Mutación Adaptativa:</strong> Evoluciona con la fatiga real del activo físico sin latencia.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Corporativo -->
+    <footer class="py-20 border-t border-slate-900 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="flex justify-center items-center gap-3 mb-8">
+                <div class="w-8 h-8 bg-slate-900 rounded flex items-center justify-center font-bold text-slate-500">F</div>
+                <span class="font-black tracking-widest text-lg uppercase">FARCASTLE NEXUS</span>
+            </div>
+            <p class="text-[10px] text-slate-500 uppercase tracking-[0.4em] font-bold mb-6 text-center">
+                Marcas Registradas UE: 19,316,468 | 19,316,483
+            </p>
+            <p class="text-xs text-slate-600 max-w-2xl mx-auto leading-loose text-center font-light italic">
+                Clases 9 y 42: Sistemas de Estabilidad Operativa y Auditoría Forense Industrial. <br>
+                © 2026 Javier Gastelurrutia - Todos los derechos reservados. Propiedad Industrial Protegida.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
